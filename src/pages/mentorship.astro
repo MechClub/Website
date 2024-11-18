@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import CardAlternate from '../components/CardAlternate.astro';
+---
+<Layout title="Mentorship" description="Find info on mentorship & become a mentor/mentee!" >
+  <main class="m-auto p-4 max-w-full text-xl sm:px-24">
+    <span class="columns-2 flex md:shrink-0 justify-items-center items-center justify-evenly">
+        <h1 class="text-mech-500 pt-40 content-center font-bold font-sans sm:px-9"><span class="bg-clip-text text-6xl sm:text-8xl">Mentorship!</h1>
+    </span>
+    <h2 class="text-mech-500 pt-12 pb-4 content-center font-bold font-sans bg-clip-text text-4xl sm:text-6xl">Lockers</h2>
+    <p class="text-mech-500 leading-10 pb-4 text-justify">Every year, Mech Club hosts a mentorship program, pairing upper-years with first-years, to ease the transition into university, provide a source of information, and give first-years a chance to meet others outside their year, which can be hard to do otherwise! Click the links below to sign up!
+    </p>
+    <ul role="list" class="link-card-grid grid gap-8">
+      <Card
+              href="https://forms.gle/vMKgf22fBGsfmDod8"
+              title="Mentee Form"
+              body="Become a mentee!"
+      />
+      <CardAlternate
+              href="https://forms.gle/GiLq7yKaju5PFKXv7"
+              title="Mentor Form"
+              body="Become a mentor!"
+      />
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  .link-card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+  }
+</style>

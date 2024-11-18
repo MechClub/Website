@@ -7,7 +7,7 @@ import CardAlternate from '../components/CardAlternate.astro';
 <Layout>
   <main class="m-auto p-4 max-w-full text-xl sm:px-24">
     <span class="columns-2 flex md:shrink-0 justify-items-center items-center justify-evenly">
-      <h1 class="text-mech-500 pt-40 content-center font-bold font-sans sm:px-9 bg-clip-text text-6xl sm:text-8xl">Welcome to Mech Club!</h1>
+      <h1 class="text-mech-500 pt-40 content-center font-bold font-sans sm:px-9 bg-clip-text text-6xl text-center sm:text-8xl">Welcome to Mech Club!</h1>
     </span>
     <p class="text-mech-500 text-justify pt-9 pb-4">Hello! We are Mech Club at the University of Toronto, ready to welcome all of you into our community! We are here to serve the mechanical engineering students of UofT. Use the links below to find out more and access some nifty resources!<br />
     </p>
@@ -28,9 +28,9 @@ import CardAlternate from '../components/CardAlternate.astro';
               body="Learn more about & rent our lockers, and look at our very pretty merch :3"
       />
       <Card
-              href="mailto:mechclub@g.skule.ca"
-              title="Contact Us"
-              body="Want to ask us something? Got a suggestion for something we should be doing? Let us know! Contact us at mechclub@g.skule.ca."
+        href="/mentorship/"
+              title="Mentorship"
+              body="Mech Club provides mentorship for first year Mech and TrackOne students! Sign up to be a mentor or mentee!"
       />
     </ul>
     <br />
@@ -59,14 +59,14 @@ import CardAlternate from '../components/CardAlternate.astro';
               body="Be on the know by following us on Insta!"
       />
       <Card
-              href="https://www.facebook.com/MechClub"
-              title="Facebook"
-              body="Or if you're a boomer, follow our Facebook page!"
-      />
-      <Card
               href="https://www.github.com/MechClub"
               title="GitHub"
               body="Wondering how we made this website? Check out our GitHub 😉"
+      />
+      <Card
+              href="mailto:mechclub@g.skule.ca"
+              title="Contact Us"
+              body="Want to ask us something? Got a suggestion for something we should be doing? Let us know! Contact us at mechclub@g.skule.ca."
       />
     </ul>
   </main>
