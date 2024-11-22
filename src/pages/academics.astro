@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import CardAlternate from '../components/CardAlternate.astro';
+import CardDark from '../components/CardDark.astro';
+import Resources from '../components/Resources.astro'
+---
+<Layout>
+  <main class="m-auto p-4 max-w-full text-xl sm:px-24">
+    <span class="columns-2 flex md:shrink-0 justify-items-center items-center justify-evenly">
+        <h1 class="text-mech-500 pt-40 content-center font-bold font-sans sm:px-9 bg-clip-text text-5xl text-center sm:text-8xl">Academic Resources!</h1>
+    </span>
+    <Resources/>
+    <h2 class="text-mech-500 pt-12 pb-4 content-center font-bold font-sans bg-clip-text text-4xl sm:text-6xl">Textbooks</h2>
+    <p class="text-mech-500 pb-4 leading-10">Every year, Mech Club assembles folders with each year’s core textbooks and old practice materials. These are located in our club Google Drive, and shared around the year group chats at the beginning of each semester. The relevant links are available below. We recommend using old tests for practice before midterms and exams!
+    </p> <!--academic resources-->
+    <ul role="list" class="link-card-grid grid gap-8">
+      <Card
+              href="https://drive.google.com/drive/folders/14paejQPp9wmwzW-UFxtoj9-HEUnRbAJ6?usp=sharing"
+              title="First Year Resources"
+              body=""
+      />
+      <CardAlternate
+              href="https://drive.google.com/drive/folders/1H45Wu4_mZQM6gK-liHj2zzjrvCCkYt5P?usp=sharing"
+              title="Second Year Resources"
+              body=""
+      />
+      <Card
+              href="https://drive.google.com/drive/folders/1VBfI4Naz4q9moXKg2p9__iO_INz5-zpU?usp=sharing"
+              title="Third Year Resources"
+              body=""
+      />
+    </ul>
+    <h2 class="text-mech-500 pt-12 pb-4 content-center font-bold font-sans bg-clip-text text-4xl sm:text-6xl">Mentorship</h2>
+<p class="text-mech-500 leading-10">Mech Club provides mentorship for first year Mech and TrackOne students! Sign up to be a mentor or mentee below!
+    </p>
+    <ul role="list" class="link-card-grid py-4 grid gap-8">
+      <CardDark
+              href="/mentorship/"
+              title="Mentorship (WIP)"
+              body="Become a mentee here"
+      />
+    </ul>
+    <h2 class="text-mech-500 pt-12 pb-4 content-center font-bold font-sans bg-clip-text text-4xl sm:text-6xl">Lockers</h2>
+<p class="text-mech-500 leading-10">Learn more about the lockers we rent below!
+    </p>
+    <ul role="list" class="link-card-grid py-4 grid gap-8">
+      <CardDark
+              href="/shop/"
+              title="Shop"
+              body="Check out our shop to learn more about our lockers (and see our cool merch collection)"
+      />
+    </ul>
+  </main>
+</Layout>
